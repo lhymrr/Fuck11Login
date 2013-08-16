@@ -1,0 +1,69 @@
+||000j|
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	登录妖妖游戏社区丨最游戏的社区、最有戏的邂逅
+</title><link rel="stylesheet" type="text/css" href="css/global.css" /><link rel="stylesheet" type="text/css" href="css/regpt.css" />
+    <script src="../js/jquery-1.3.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <form method="post" action="login.aspx?siteid=50005&amp;returnurl=http%3a%2f%2fi.5211game.com%2fLogin.aspx%3freturnurl%3dhttp%3a%2f%2fi.5211game.com%3a80%2f" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyMzI3ODI2ODBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQxVc2VyQ2hlY2tCb3jQIGg7DwVBcZCffRMxe03M18OedA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLe2+mbAQLB2tiHDgK1qbSWCwL07qXZBgLmwdLFDZc2mILMY55IspHL6KQgO25sOuhz" />
+<div id="bodyer"  class="loginpage">
+	<div class="header">    	
+        <div class="dlbtn"><a href="http://pv.5211game.com/PVCount.aspx?id=295" title="注册">注册</a></div>
+        <div class="logobox">
+        	<img src="img/logo.png" alt="logo" />
+        </div>
+    </div>
+    <div class="login_area clear">
+        <span class="txtinput">
+        <input name="txtUser" type="text" value="假假假疯狂" id="txtUser" tabindex="1" class="forminput" onfocus="if (this.value==&#39;平台账号（非通行证）&#39;){this.value=&#39;&#39;;this.style.color=&#39;#000&#39;;}" onblur="if (this.value==&#39;&#39;){this.value=&#39;平台账号（非通行证）&#39;;this.style.color=&#39;#bebebe&#39;;}" />
+        </span>
+        <span class="txtinput">
+            <input name="txtPassWord" type="password" id="txtPassWord" tabindex="2" class="forminput" onfocus="$(&quot;#mima&quot;).hide();this.style.color=&quot;#000&quot;;" onblur="if (this.value==&quot;&quot;) {$(&quot;#mima&quot;).show();this.style.color=&quot;#bebebe&quot;;} " />
+            <label id='mima' class="mima" for="password" onclick=" document.getElementById('mima').focus();">密码</label>
+        </span>
+        <span class="clear">
+            <input type="submit" name="butLogin" value="登录" onclick="javascript:return CheckLogin();" id="butLogin" tabindex="4" class="login_btn reg_allbtn" />
+        </span>
+        <span class="login_nt"><input id="UserCheckBox" type="checkbox" name="UserCheckBox" tabindex="3" /><a href="javascript:void(0);" onclick="selectChk();">两周内自动登陆</a></span>
+        <span class="login_nt"><a href="http://pv.5211game.com/PVCount.aspx?id=230">忘记密码？</a></span>
+    </div>        	
+</div>   
+    <script type="text/javascript">
+        if ($.trim($("#txtPassWord").val()) == "") {
+            document.getElementById('mima').style.display = 'block';
+        }
+        else
+        { document.getElementById('mima').style.display = 'none'; }
+    </script>
+    <script type="text/javascript">
+        function Trim(str) {
+            return str.replace(/\s+/g, '');
+        }
+        function CheckLogin() {
+            var name = document.getElementById('txtUser');
+            var pwd = document.getElementById('txtPassWord');
+            if (Trim(name.value) == '') { alert('请您输入游戏账号!'); name.focus(); return false; }
+            if (Trim(name.value) == '平台账号（非通行证）') { alert('请您输入游戏账号!'); name.focus(); return false; }
+            if (Trim(pwd.value) == '') { alert('请您输入密码!'); pwd.focus(); return false; }
+            return true;
+        }
+        function selectChk() {
+            if ($("#UserCheckBox").attr("checked") == false) {
+                $("#UserCheckBox").attr("checked", true);
+            }
+            else
+            { $("#UserCheckBox").attr("checked", false); }
+        }
+    </script>
+    
+<script>alert('账号或密码错误');</script></form>
+</body>
+</html>|
